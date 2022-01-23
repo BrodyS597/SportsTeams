@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		6D67DCFE279DE9610035D886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D67DCFD279DE9610035D886 /* AppDelegate.swift */; };
 		6D67DD00279DE9610035D886 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D67DCFF279DE9610035D886 /* SceneDelegate.swift */; };
-		6D67DD02279DE9610035D886 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D67DD01279DE9610035D886 /* ViewController.swift */; };
 		6D67DD05279DE9610035D886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D67DD03279DE9610035D886 /* Main.storyboard */; };
 		6D67DD07279DE9610035D886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D67DD06279DE9610035D886 /* Assets.xcassets */; };
 		6D67DD0A279DE9610035D886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D67DD08279DE9610035D886 /* LaunchScreen.storyboard */; };
+		6D67DD15279DED400035D886 /* SportsTeamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D67DD14279DED400035D886 /* SportsTeamsTableViewController.swift */; };
+		6D67DD19279DF0330035D886 /* SportsTeamsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D67DD18279DF0330035D886 /* SportsTeamsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6D67DCFA279DE9610035D886 /* SportsTeams.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsTeams.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D67DCFD279DE9610035D886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D67DCFF279DE9610035D886 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6D67DD01279DE9610035D886 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6D67DD04279DE9610035D886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D67DD06279DE9610035D886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D67DD09279DE9610035D886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D67DD0B279DE9610035D886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D67DD14279DED400035D886 /* SportsTeamsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsTeamsTableViewController.swift; sourceTree = "<group>"; };
+		6D67DD18279DF0330035D886 /* SportsTeamsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsTeamsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		6D67DCFC279DE9610035D886 /* SportsTeams */ = {
 			isa = PBXGroup;
 			children = (
-				6D67DCFD279DE9610035D886 /* AppDelegate.swift */,
-				6D67DCFF279DE9610035D886 /* SceneDelegate.swift */,
-				6D67DD01279DE9610035D886 /* ViewController.swift */,
-				6D67DD03279DE9610035D886 /* Main.storyboard */,
-				6D67DD06279DE9610035D886 /* Assets.xcassets */,
+				6D67DD11279DEC070035D886 /* Resources */,
+				6D67DD16279DED4C0035D886 /* Controllers */,
 				6D67DD08279DE9610035D886 /* LaunchScreen.storyboard */,
-				6D67DD0B279DE9610035D886 /* Info.plist */,
+				6D67DD03279DE9610035D886 /* Main.storyboard */,
 			);
 			path = SportsTeams;
+			sourceTree = "<group>";
+		};
+		6D67DD11279DEC070035D886 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D67DCFD279DE9610035D886 /* AppDelegate.swift */,
+				6D67DCFF279DE9610035D886 /* SceneDelegate.swift */,
+				6D67DD06279DE9610035D886 /* Assets.xcassets */,
+				6D67DD0B279DE9610035D886 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6D67DD16279DED4C0035D886 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6D67DD17279DED600035D886 /* Custom Views */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6D67DD17279DED600035D886 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D67DD14279DED400035D886 /* SportsTeamsTableViewController.swift */,
+				6D67DD18279DF0330035D886 /* SportsTeamsTableViewCell.swift */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D67DD02279DE9610035D886 /* ViewController.swift in Sources */,
 				6D67DCFE279DE9610035D886 /* AppDelegate.swift in Sources */,
+				6D67DD19279DF0330035D886 /* SportsTeamsTableViewCell.swift in Sources */,
 				6D67DD00279DE9610035D886 /* SceneDelegate.swift in Sources */,
+				6D67DD15279DED400035D886 /* SportsTeamsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SportsTeams/Info.plist;
+				INFOPLIST_FILE = SportsTeams/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SportsTeams/Info.plist;
+				INFOPLIST_FILE = SportsTeams/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
