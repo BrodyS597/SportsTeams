@@ -14,6 +14,7 @@ class SportsTeamsDetailViewController: UIViewController {
     @IBOutlet weak var teamRankingTextField: UITextField!
     @IBOutlet weak var teamPlayerCountTextField: UITextField!
     
+    var sportsTeam: SportsTeam?
     
     override func viewDidLoad() {
         super.viewDidLoad()
