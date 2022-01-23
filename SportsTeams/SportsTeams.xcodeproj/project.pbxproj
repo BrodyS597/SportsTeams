@@ -16,6 +16,7 @@
 		6D67DD19279DF0330035D886 /* SportsTeamsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D67DD18279DF0330035D886 /* SportsTeamsTableViewCell.swift */; };
 		6D67DD1D279DFDFB0035D886 /* SportsTeamsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D67DD1C279DFDFB0035D886 /* SportsTeamsDetailViewController.swift */; };
 		6D67DD1F279E00FC0035D886 /* SportsTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D67DD1E279E00FC0035D886 /* SportsTeam.swift */; };
+		6D67DD23279E03F70035D886 /* SportsTeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D67DD22279E03F70035D886 /* SportsTeamController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		6D67DD18279DF0330035D886 /* SportsTeamsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsTeamsTableViewCell.swift; sourceTree = "<group>"; };
 		6D67DD1C279DFDFB0035D886 /* SportsTeamsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsTeamsDetailViewController.swift; sourceTree = "<group>"; };
 		6D67DD1E279E00FC0035D886 /* SportsTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsTeam.swift; sourceTree = "<group>"; };
+		6D67DD22279E03F70035D886 /* SportsTeamController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsTeamController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		6D67DD16279DED4C0035D886 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6D67DD22279E03F70035D886 /* SportsTeamController.swift */,
 				6D67DD14279DED400035D886 /* SportsTeamsTableViewController.swift */,
 				6D67DD1C279DFDFB0035D886 /* SportsTeamsDetailViewController.swift */,
 				6D67DD17279DED600035D886 /* Custom Views */,
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D67DD23279E03F70035D886 /* SportsTeamController.swift in Sources */,
 				6D67DCFE279DE9610035D886 /* AppDelegate.swift in Sources */,
 				6D67DD19279DF0330035D886 /* SportsTeamsTableViewCell.swift in Sources */,
 				6D67DD00279DE9610035D886 /* SceneDelegate.swift in Sources */,

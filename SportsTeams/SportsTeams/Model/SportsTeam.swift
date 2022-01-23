@@ -26,3 +26,15 @@ class SportsTeam {
     }
     
 }// End of class
+
+// MARK: - Extension
+
+//This is an extension of our model object to further its functionality and conform to equatable
+extension SportsTeam: Equatable {
+    static func == (lhs: SportsTeam, rhs: SportsTeam) -> Bool {
+        lhs.name == rhs.name &&
+        lhs.ranking == rhs.ranking &&
+        lhs.playerCount == rhs.playerCount
+    }
+    
+}// end of extension
