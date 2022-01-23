@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Sports Teams-->
         <scene sceneID="61z-wB-QFY">
             <objects>
                 <tableViewController id="IZ0-CW-00I" customClass="SportsTeamsTableViewController" customModule="SportsTeams" customModuleProvider="target" sceneMemberID="viewController">
@@ -68,24 +68,128 @@
                             <outlet property="delegate" destination="IZ0-CW-00I" id="qSJ-pl-ig9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Ko5-DM-75b">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="VR1-4g-0kW"/>
+                    <navigationItem key="navigationItem" title="Sports Teams" id="Ko5-DM-75b">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="VR1-4g-0kW">
+                            <connections>
+                                <segue destination="YFq-Sa-0pE" kind="show" id="aKf-uM-7Zz"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J44-iL-UGO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="355" y="94"/>
         </scene>
-        <!--View Controller-->
+        <!--Sports Teams Detail View Controller-->
         <scene sceneID="OOh-0z-FRb">
             <objects>
-                <viewController id="YFq-Sa-0pE" sceneMemberID="viewController">
+                <viewController id="YFq-Sa-0pE" customClass="SportsTeamsDetailViewController" customModule="SportsTeams" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="otP-Pk-b46">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RUV-9N-VLi">
+                                <rect key="frame" x="10" y="98" width="394" height="118"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Awd-bX-mci">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWR-x3-tWb">
+                                                <rect key="frame" x="0.0" y="0.0" width="49.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Team Name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6YK-4Y-2mL">
+                                                <rect key="frame" x="57.5" y="0.0" width="336.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Tpe-YF-Jqh">
+                                        <rect key="frame" x="0.0" y="42" width="394" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ranking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7T-lx-z4t">
+                                                <rect key="frame" x="0.0" y="0.0" width="61.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Team Ranking" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h6f-2k-zTX">
+                                                <rect key="frame" x="69.5" y="0.0" width="324.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="E9S-xq-Bcr">
+                                        <rect key="frame" x="0.0" y="84" width="394" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Count:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dP-Cd-goS">
+                                                <rect key="frame" x="0.0" y="0.0" width="102" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player Count..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YXq-q0-SFb">
+                                                <rect key="frame" x="110" y="0.0" width="284" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="k2I-RH-2zy">
+                                <rect key="frame" x="10" y="226" width="394" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeP-lc-12M">
+                                        <rect key="frame" x="0.0" y="0.0" width="189" height="31"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Clear"/>
+                                        <connections>
+                                            <action selector="clearButtonTapped:" destination="YFq-Sa-0pE" eventType="touchUpInside" id="4Lj-iV-eHm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmK-Lm-BWh">
+                                        <rect key="frame" x="197" y="0.0" width="197" height="31"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Delete"/>
+                                        <connections>
+                                            <action selector="deleteButtonTapped:" destination="YFq-Sa-0pE" eventType="touchUpInside" id="KhT-eB-FEE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="sph-Lt-AnJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sph-Lt-AnJ" firstAttribute="trailing" secondItem="k2I-RH-2zy" secondAttribute="trailing" constant="10" id="CMu-48-JWG"/>
+                            <constraint firstItem="k2I-RH-2zy" firstAttribute="leading" secondItem="sph-Lt-AnJ" secondAttribute="leading" constant="10" id="Fht-Dw-vWx"/>
+                            <constraint firstItem="RUV-9N-VLi" firstAttribute="leading" secondItem="sph-Lt-AnJ" secondAttribute="leading" constant="10" id="LHs-u9-zqz"/>
+                            <constraint firstItem="k2I-RH-2zy" firstAttribute="top" secondItem="RUV-9N-VLi" secondAttribute="bottom" constant="10" id="jSr-aJ-BnI"/>
+                            <constraint firstItem="RUV-9N-VLi" firstAttribute="top" secondItem="sph-Lt-AnJ" secondAttribute="top" constant="10" id="k1H-sa-QDD"/>
+                            <constraint firstItem="sph-Lt-AnJ" firstAttribute="trailing" secondItem="RUV-9N-VLi" secondAttribute="trailing" constant="10" id="k7i-Bo-fB3"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="gGp-vr-3TG">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="TdX-cF-ORb">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="YFq-Sa-0pE" id="npe-L4-01f"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="teamNameTextField" destination="6YK-4Y-2mL" id="0OM-Id-cJH"/>
+                        <outlet property="teamPlayerCountTextField" destination="YXq-q0-SFb" id="E0l-mz-TIu"/>
+                        <outlet property="teamRankingTextField" destination="h6f-2k-zTX" id="4rI-2s-qjA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tUc-MX-N09" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,6 +215,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
