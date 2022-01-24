@@ -12,20 +12,19 @@ class sportsTeamController {
     // MARK: - our SOURCE OF TRUTH
     var arrayOfSportsTeams: [SportsTeam] = []
     
-    
-static let sharedInstance = sportsTeamController()
+    static let sharedInstance = sportsTeamController()
     
     // MARK: - CRUD FUNCS
     
     // this line defines a function which will return an instance of our model object SportsTeam
-    func createSportsTeam(name: String, ranking: Double, playerCount: Double) {
+    func createSportsTeam(name: String, ranking: Int, playerCount: Int) {
         
         //calling the function, more specifically, we are calling our designated initializer function on the SportsTeams class
         let newSportsTeam = SportsTeam(name: name, ranking: ranking, playerCount: playerCount)
         arrayOfSportsTeams.append(newSportsTeam)
     }
     
-    func updateSportsTeam(SportsTeamToUpdate: SportsTeam, updatedName: String, updatedRanking: Double, updatedPlayerCount: Double) {
+    func updateSportsTeam(SportsTeamToUpdate: SportsTeam, updatedName: String, updatedRanking: Int, updatedPlayerCount: Int) {
         
         //We are assigning the new values that were passed into our update function to the corresponding values on the SportsTeam
         SportsTeamToUpdate.name = updatedName

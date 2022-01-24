@@ -12,12 +12,12 @@ class SportsTeam {
     
     // MARK: - Properties
     var name: String
-    var ranking: Double
-    var playerCount: Double
+    var ranking: Int
+    var playerCount: Int
     
     // MARK: - Initializer
     //Defines how to create our model object of SportsTeam
-    init(name: String, ranking: Double, playerCount: Double) {
+    init(name: String, ranking: Int, playerCount: Int) {
         
         //Self assigns the corresponding property to an instance of itSELF/ instance of the class SportsTeam
         self.name = name

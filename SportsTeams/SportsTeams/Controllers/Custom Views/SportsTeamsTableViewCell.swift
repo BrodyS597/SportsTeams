@@ -8,16 +8,14 @@
 import UIKit
 
 class SportsTeamsTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var sportsTeamNameLabel: UILabel!
     @IBOutlet weak var sportsTeamRankingLabel: UILabel!
     @IBOutlet weak var sportsTeamPlayerCountLabel: UILabel!
     
     func updateViews(sportsTeam: SportsTeam) {
         sportsTeamNameLabel.text = sportsTeam.name
-        sportsTeamRankingLabel.text = String(sportsTeam.ranking)
-        sportsTeamPlayerCountLabel.text = String(sportsTeam.playerCount)
-
-}
-    
+        sportsTeamRankingLabel.text = "#\(sportsTeam.ranking)"
+        sportsTeamPlayerCountLabel.text = "Player count: \(sportsTeam.playerCount)"
+    }
 }//End of class

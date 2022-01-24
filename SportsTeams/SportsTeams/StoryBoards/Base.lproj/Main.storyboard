@@ -192,6 +192,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="clearButton" destination="FeP-lc-12M" id="0UK-Cz-dqU"/>
+                        <outlet property="deleteButton" destination="GmK-Lm-BWh" id="KXb-kz-bVI"/>
                         <outlet property="teamNameTextField" destination="6YK-4Y-2mL" id="0OM-Id-cJH"/>
                         <outlet property="teamPlayerCountTextField" destination="YXq-q0-SFb" id="E0l-mz-TIu"/>
                         <outlet property="teamRankingTextField" destination="h6f-2k-zTX" id="4rI-2s-qjA"/>
